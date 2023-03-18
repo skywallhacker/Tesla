@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.change_img {
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 700ms ease;
+}
+
+span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #707070;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 79px;
+}
+
+img {
+  width: 100%;
+}
+
+.promo .present {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 127px;
+  margin-top: 50px;
+}
+.promo .color_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 55px;
+}
+.promo .color_box .div:nth-child(2) {
+  padding-bottom: 31px;
+}
+.promo .color_box .color_item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+.promo .color_box .color_item .color_elem {
+  background: #262626;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.promo .color_box .color_item .color_elem:nth-child(2) {
+  background: #EFEFEF;
+}
+.promo .color_box .color_item .color_elem:nth-child(3) {
+  background: #E6DDD0;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input:checked + .switch .switch-button {
+  left: 1.6rem;
+  background-color: white;
+}
+
+input:checked + .switch {
+  background-color: black;
+  border: 3px solid black;
+}
+
+input:checked + .switch-dark .switch-button-dark {
+  left: 1.6rem;
+  background-color: black;
+}
+
+input:checked + .switch-dark {
+  background-color: white;
+  border: 3px solid white;
+}
+
+.switch {
+  height: 1.3rem;
+  width: 2.8rem;
+  border-radius: 20px;
+  border: 3px solid grey;
+  position: absolute;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.switch-button {
+  background-color: black;
+  position: inherit;
+  top: 0.11rem;
+  left: 0.19rem;
+  border-radius: 10px;
+  height: 80%;
+  width: 35%;
+  transition: all 200ms ease-in-out;
+}
